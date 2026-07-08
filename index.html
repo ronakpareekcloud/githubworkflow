@@ -3,216 +3,222 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AWS EC2 Web Server</title>
+<title>AWS EC2 Web Server Project</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:Verdana,sans-serif;
 }
 
 body{
-    background:#f5f7fa;
-    color:#333;
+    background:#ecf0f1;
 }
 
 header{
-    background:#1f2937;
-    color:white;
+    background:#0066cc;
+    color:#fff;
     text-align:center;
-    padding:50px 20px;
-}
-
-header h1{
-    margin-bottom:10px;
+    padding:50px;
 }
 
 nav{
-    background:#374151;
+    background:#004c99;
     text-align:center;
     padding:15px;
 }
 
 nav a{
-    color:white;
+    color:#fff;
     text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    margin:15px;
 }
 
 nav a:hover{
-    color:#38bdf8;
+    color:#ffcc00;
 }
 
-section{
+.container{
     width:90%;
-    max-width:1000px;
-    margin:30px auto;
+    max-width:1100px;
+    margin:auto;
+    padding:30px;
 }
 
-.box{
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    flex:1;
+    min-width:300px;
     background:white;
-    padding:25px;
-    border-radius:8px;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
-    margin-bottom:25px;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+    transition:.3s;
 }
 
-.box:hover{
-    transform:translateY(-5px);
-    transition:0.3s;
+.card:hover{
+    transform:scale(1.03);
 }
 
 h2{
-    color:#1f2937;
     margin-bottom:15px;
+    color:#0066cc;
 }
 
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+ul{
+    margin-left:20px;
 }
 
-.skills span{
-    background:#2563eb;
+.btn{
+    margin-top:20px;
+    background:#0066cc;
     color:white;
-    padding:8px 15px;
-    border-radius:20px;
-}
-
-button{
     padding:12px 25px;
-    background:#2563eb;
-    color:white;
     border:none;
-    border-radius:5px;
     cursor:pointer;
+    border-radius:5px;
 }
 
-button:hover{
-    background:#1d4ed8;
+.btn:hover{
+    background:#003d80;
 }
 
 footer{
-    background:#1f2937;
+    background:#222;
     color:white;
     text-align:center;
     padding:20px;
+    margin-top:30px;
 }
 </style>
 
 </head>
+
 <body>
 
 <header>
 
 <h1>Ronak Pareek</h1>
 
-<p>AWS EC2 Web Server Deployment</p>
+<p>AWS EC2 Static Website Deployment</p>
 
 </header>
 
 <nav>
 
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Skills</a>
+<a href="#">Services</a>
 <a href="#">Project</a>
 <a href="#">Contact</a>
 
 </nav>
 
-<section>
+<div class="container">
 
-<div class="box">
+<div class="row">
 
-<h2>About Project</h2>
+<div class="card">
+
+<h2>Project Overview</h2>
 
 <p>
-This project demonstrates how to launch an EC2 instance,
-configure Apache Web Server, and host a static website on AWS.
+
+This project explains how to deploy a static HTML website on an Amazon EC2 instance using Apache Web Server.
+
 </p>
 
 </div>
 
-<div class="box">
+<div class="card">
 
-<h2>AWS Services Used</h2>
+<h2>AWS Services</h2>
 
-<div class="skills">
+<ul>
 
-<span>EC2</span>
+<li>Amazon EC2</li>
 
-<span>VPC</span>
+<li>Amazon VPC</li>
 
-<span>Security Group</span>
+<li>Internet Gateway</li>
 
-<span>Elastic IP</span>
+<li>Security Group</li>
 
-<span>Linux</span>
+<li>Elastic IP</li>
 
-<span>Apache</span>
+<li>Linux</li>
 
-<span>GitHub</span>
+<li>Apache</li>
+
+</ul>
 
 </div>
 
 </div>
-
-<div class="box">
-
-<h2>Deployment Steps</h2>
-
-<ol>
-
-<li>Create EC2 Instance</li>
-
-<li>Configure Security Group</li>
-
-<li>Connect with SSH</li>
-
-<li>Install Apache</li>
-
-<li>Upload HTML Website</li>
-
-<li>Verify Public IP</li>
-
-</ol>
 
 <br>
 
-<button onclick="info()">View Project</button>
+<div class="row">
+
+<div class="card">
+
+<h2>Deployment Process</h2>
+
+<ol>
+
+<li>Create EC2</li>
+
+<li>Configure Security Group</li>
+
+<li>Connect via SSH</li>
+
+<li>Install Apache</li>
+
+<li>Copy HTML File</li>
+
+<li>Test Website</li>
+
+</ol>
+
+<button class="btn" onclick="project()">View Project</button>
 
 </div>
 
-<div class="box">
+<div class="card">
 
-<h2>Contact</h2>
+<h2>Developer</h2>
 
-<p>Name : Ronak Pareek</p>
+<p><strong>Name:</strong> Ronak Pareek</p>
 
-<p>Email : ronakpareekcloud@gmail.com</p>
+<p><strong>Email:</strong> ronakpareekcloud@gmail.com</p>
 
-<p>GitHub : github.com/ronakpareekcloud</p>
+<p><strong>GitHub:</strong></p>
+
+<p>github.com/ronakpareekcloud</p>
 
 </div>
 
-</section>
+</div>
+
+</div>
 
 <footer>
 
-<p>© 2026 AWS EC2 Web Server Project | Ronak Pareek</p>
+<p>© 2026 Ronak Pareek | AWS EC2 Web Server Project</p>
 
 </footer>
 
 <script>
 
-function info(){
+function project(){
 
-alert("AWS EC2 Web Server Deployment Project");
+alert("Welcome to AWS EC2 Web Server Deployment Project!");
 
 }
 
