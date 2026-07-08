@@ -3,117 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ronak Pareek | AWS EC2 Web Server Project</title>
+<title>AWS EC2 Web Server Project | Ronak Pareek</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#f4f7fa;
-color:#333;
-line-height:1.6;
+    background:#eef2f7;
+    color:#333;
 }
 
 header{
-background:#232f3e;
-color:white;
-padding:40px;
-text-align:center;
-}
-
-header h1{
-font-size:40px;
-margin-bottom:10px;
-}
-
-header p{
-font-size:18px;
+    background:#0d6efd;
+    color:white;
+    padding:40px;
+    text-align:center;
 }
 
 nav{
-background:#37475a;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
+    background:#084298;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:0 15px;
-font-weight:bold;
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
 }
 
 nav a:hover{
-color:#ff9900;
+    color:yellow;
 }
 
-section{
-padding:50px 10%;
-}
-
-h2{
-color:#232f3e;
-margin-bottom:20px;
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 0;
 }
 
 .card{
-background:white;
-padding:20px;
-margin-top:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.1);
-transition:.3s;
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.15);
 }
 
 .card:hover{
-transform:translateY(-8px);
+    transform:translateY(-5px);
+    transition:.3s;
 }
 
-ul li{
-margin:10px 0;
+h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+ul{
+    margin-left:20px;
 }
 
 button{
-background:#ff9900;
-color:white;
-padding:12px 25px;
-border:none;
-border-radius:5px;
-cursor:pointer;
-font-size:16px;
-margin-top:20px;
+    padding:12px 25px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
 }
 
 button:hover{
-background:#e68a00;
+    background:#084298;
 }
 
 footer{
-background:#232f3e;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
-#topBtn{
-display:none;
-position:fixed;
-right:20px;
-bottom:20px;
-padding:12px 18px;
-background:#ff9900;
-color:white;
-border:none;
-border-radius:50%;
-cursor:pointer;
+    background:#212529;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 </style>
 
@@ -125,7 +100,7 @@ cursor:pointer;
 
 <h1>Ronak Pareek</h1>
 
-<p>Cloud Computing | AWS | Linux | DevOps</p>
+<p>AWS EC2 Web Server Deployment Project</p>
 
 </header>
 
@@ -133,25 +108,27 @@ cursor:pointer;
 
 <a href="#about">About</a>
 
-<a href="#skills">Skills</a>
+<a href="#services">AWS Services</a>
 
-<a href="#project">Project</a>
+<a href="#steps">Deployment</a>
 
 <a href="#contact">Contact</a>
 
 </nav>
 
+<div class="container">
+
 <section id="about">
 
-<h2>About Project</h2>
-
 <div class="card">
+
+<h2>About Project</h2>
 
 <p>
 
 This project demonstrates how to deploy a static website on an Amazon EC2 instance using Apache Web Server.
 
-The infrastructure is built on AWS using networking and security best practices.
+The project also includes basic networking and security configuration.
 
 </p>
 
@@ -159,31 +136,29 @@ The infrastructure is built on AWS using networking and security best practices.
 
 </section>
 
-<section id="skills">
-
-<h2>Skills Used</h2>
+<section id="services">
 
 <div class="card">
 
+<h2>AWS Services Used</h2>
+
 <ul>
 
-<li>AWS EC2</li>
+<li>Amazon EC2</li>
 
 <li>Amazon VPC</li>
 
 <li>Security Groups</li>
 
-<li>Linux (Amazon Linux)</li>
+<li>Elastic IP</li>
 
-<li>Apache Web Server</li>
+<li>Internet Gateway</li>
 
-<li>SSH</li>
+<li>Apache HTTP Server</li>
 
-<li>Git & GitHub</li>
+<li>Linux</li>
 
-<li>HTML</li>
-
-<li>Networking Basics</li>
+<li>GitHub</li>
 
 </ul>
 
@@ -191,23 +166,31 @@ The infrastructure is built on AWS using networking and security best practices.
 
 </section>
 
-<section id="project">
-
-<h2>Project Overview</h2>
+<section id="steps">
 
 <div class="card">
 
-<h3>AWS EC2 Web Server Deployment</h3>
+<h2>Deployment Steps</h2>
 
-<p>
+<ol>
 
-Created an EC2 instance, connected using SSH, installed Apache Web Server,
+<li>Create EC2 Instance</li>
 
-configured a custom HTML page and deployed the website successfully.
+<li>Configure Security Group</li>
 
-</p>
+<li>Connect using SSH</li>
 
-<button onclick="showMsg()">View Details</button>
+<li>Install Apache</li>
+
+<li>Upload HTML Page</li>
+
+<li>Verify Website</li>
+
+</ol>
+
+<br>
+
+<button onclick="showMessage()">Project Details</button>
 
 </div>
 
@@ -215,71 +198,37 @@ configured a custom HTML page and deployed the website successfully.
 
 <section id="contact">
 
-<h2>Contact</h2>
-
 <div class="card">
 
-<p><b>Name:</b> Ronak Pareek</p>
+<h2>Contact</h2>
 
-<p><b>Email:</b> ronakpareekcloud@gmail.com</p>
+<p><strong>Name:</strong> Ronak Pareek</p>
 
-<p><b>GitHub:</b></p>
+<p><strong>Email:</strong> ronakpareekcloud@gmail.com</p>
+
+<p><strong>GitHub:</strong></p>
 
 <a href="https://github.com/ronakpareekcloud" target="_blank">
-
 https://github.com/ronakpareekcloud
-
 </a>
 
 </div>
 
 </section>
 
+</div>
+
 <footer>
 
-<p>
-
-© 2026 Ronak Pareek | AWS EC2 Web Server Project
-
-</p>
+<p>© 2026 Ronak Pareek | AWS EC2 Web Server Project</p>
 
 </footer>
 
-<button onclick="topFunction()" id="topBtn">↑</button>
-
 <script>
 
-function showMsg(){
+function showMessage(){
 
-alert("AWS EC2 Web Server Project by Ronak Pareek");
-
-}
-
-let btn=document.getElementById("topBtn");
-
-window.onscroll=function(){
-
-if(document.body.scrollTop>200 || document.documentElement.scrollTop>200){
-
-btn.style.display="block";
-
-}else{
-
-btn.style.display="none";
-
-}
-
-}
-
-function topFunction(){
-
-window.scrollTo({
-
-top:0,
-
-behavior:"smooth"
-
-});
+alert("AWS EC2 Web Server Deployment Project Created by Ronak Pareek");
 
 }
 
