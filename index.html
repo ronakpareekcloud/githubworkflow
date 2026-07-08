@@ -10,187 +10,201 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Verdana,sans-serif;
+    font-family:Segoe UI,Tahoma,Geneva,Verdana,sans-serif;
 }
 
 body{
-    background:#ecf0f1;
+    background:#f8f9fa;
+    color:#333;
 }
 
 header{
-    background:#0066cc;
-    color:#fff;
+    background:#005792;
+    color:white;
     text-align:center;
-    padding:50px;
+    padding:60px 20px;
 }
 
-nav{
-    background:#004c99;
-    text-align:center;
-    padding:15px;
+header h1{
+    font-size:40px;
 }
 
-nav a{
-    color:#fff;
-    text-decoration:none;
-    margin:15px;
+header p{
+    margin-top:10px;
 }
 
-nav a:hover{
-    color:#ffcc00;
-}
-
-.container{
+main{
     width:90%;
-    max-width:1100px;
-    margin:auto;
-    padding:30px;
+    max-width:1000px;
+    margin:30px auto;
 }
 
-.row{
-    display:flex;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.card{
-    flex:1;
-    min-width:300px;
+section{
     background:white;
-    border-radius:10px;
-    padding:20px;
-    box-shadow:0 0 10px rgba(0,0,0,.15);
-    transition:.3s;
+    padding:25px;
+    margin-bottom:20px;
+    border-left:5px solid #005792;
+    border-radius:8px;
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
 }
 
-.card:hover{
-    transform:scale(1.03);
+section:hover{
+    transform:translateX(5px);
+    transition:.3s;
 }
 
 h2{
     margin-bottom:15px;
-    color:#0066cc;
+    color:#005792;
 }
 
-ul{
-    margin-left:20px;
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:left;
+}
+
+table th{
+    background:#005792;
+    color:white;
 }
 
 .btn{
+    display:inline-block;
     margin-top:20px;
-    background:#0066cc;
-    color:white;
     padding:12px 25px;
-    border:none;
-    cursor:pointer;
+    background:#005792;
+    color:white;
+    text-decoration:none;
     border-radius:5px;
 }
 
 .btn:hover{
-    background:#003d80;
+    background:#003f6b;
 }
 
 footer{
+    text-align:center;
     background:#222;
     color:white;
-    text-align:center;
     padding:20px;
-    margin-top:30px;
 }
 </style>
 
 </head>
-
 <body>
 
 <header>
 
-<h1>Ronak Pareek</h1>
+<h1>AWS EC2 Web Server Project</h1>
 
-<p>AWS EC2 Static Website Deployment</p>
+<p>Hosted by Ronak Pareek</p>
 
 </header>
 
-<nav>
+<main>
 
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Project</a>
-<a href="#">Contact</a>
+<section>
 
-</nav>
-
-<div class="container">
-
-<div class="row">
-
-<div class="card">
-
-<h2>Project Overview</h2>
+<h2>Project Description</h2>
 
 <p>
-
-This project explains how to deploy a static HTML website on an Amazon EC2 instance using Apache Web Server.
-
+This project demonstrates hosting a static HTML website on an AWS EC2
+instance using Apache Web Server. It covers instance creation,
+security configuration, and website deployment.
 </p>
 
-</div>
+</section>
 
-<div class="card">
+<section>
 
-<h2>AWS Services</h2>
+<h2>Services Used</h2>
 
-<ul>
+<table>
 
-<li>Amazon EC2</li>
+<tr>
 
-<li>Amazon VPC</li>
+<th>Service</th>
 
-<li>Internet Gateway</li>
+<th>Purpose</th>
 
-<li>Security Group</li>
+</tr>
 
-<li>Elastic IP</li>
+<tr>
 
-<li>Linux</li>
+<td>Amazon EC2</td>
 
-<li>Apache</li>
+<td>Host Website</td>
 
-</ul>
+</tr>
 
-</div>
+<tr>
 
-</div>
+<td>Amazon VPC</td>
 
-<br>
+<td>Network</td>
 
-<div class="row">
+</tr>
 
-<div class="card">
+<tr>
 
-<h2>Deployment Process</h2>
+<td>Security Group</td>
+
+<td>Firewall Rules</td>
+
+</tr>
+
+<tr>
+
+<td>Internet Gateway</td>
+
+<td>Internet Access</td>
+
+</tr>
+
+<tr>
+
+<td>Apache</td>
+
+<td>Web Server</td>
+
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>Deployment Steps</h2>
 
 <ol>
 
-<li>Create EC2</li>
+<li>Create an EC2 instance.</li>
 
-<li>Configure Security Group</li>
+<li>Allow HTTP and SSH ports.</li>
 
-<li>Connect via SSH</li>
+<li>Connect using SSH.</li>
 
-<li>Install Apache</li>
+<li>Install Apache HTTP Server.</li>
 
-<li>Copy HTML File</li>
+<li>Upload the HTML file.</li>
 
-<li>Test Website</li>
+<li>Access the website using Public IP.</li>
 
 </ol>
 
-<button class="btn" onclick="project()">View Project</button>
+<a href="#" class="btn" onclick="message()">Learn More</a>
 
-</div>
+</section>
 
-<div class="card">
+<section>
 
 <h2>Developer</h2>
 
@@ -198,27 +212,23 @@ This project explains how to deploy a static HTML website on an Amazon EC2 insta
 
 <p><strong>Email:</strong> ronakpareekcloud@gmail.com</p>
 
-<p><strong>GitHub:</strong></p>
+<p><strong>GitHub:</strong> github.com/ronakpareekcloud</p>
 
-<p>github.com/ronakpareekcloud</p>
+</section>
 
-</div>
-
-</div>
-
-</div>
+</main>
 
 <footer>
 
-<p>© 2026 Ronak Pareek | AWS EC2 Web Server Project</p>
+<p>© 2026 AWS EC2 Web Server Project</p>
 
 </footer>
 
 <script>
 
-function project(){
+function message(){
 
-alert("Welcome to AWS EC2 Web Server Deployment Project!");
+alert("Thank you for visiting my AWS EC2 Web Server Project.");
 
 }
 
